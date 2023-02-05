@@ -7,7 +7,13 @@ A command line based calendar application written in C.
 
 ## Usage
 To compile the program, run the following command into the build folder:
-	cmake .. & make & ./cCalendar
+> cmake .. & make
+
+Print out the current month calendar:
+> ./cCalendar
+
+To specify a year/month:
+> ./cCalendar -y [YEAR] -m [MONTH]
 
 ## Requirements
 - GCC Compiler
