@@ -1,3 +1,4 @@
+![Calendar icon](<img src="https://img.icons8.com/emoji/48/null/tear-off-calendar-emoji.png"/>)
 # cCalendar
 A command line based calendar application written in C.
 
