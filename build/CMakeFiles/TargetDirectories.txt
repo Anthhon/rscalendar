@@ -1,7 +1,0 @@
-/home/anthony/Github/own-projects/cCalendar/build/CMakeFiles/cCalendar.dir
-/home/anthony/Github/own-projects/cCalendar/build/CMakeFiles/edit_cache.dir
-/home/anthony/Github/own-projects/cCalendar/build/CMakeFiles/rebuild_cache.dir
-/home/anthony/Github/own-projects/cCalendar/build/CMakeFiles/list_install_components.dir
-/home/anthony/Github/own-projects/cCalendar/build/CMakeFiles/install.dir
-/home/anthony/Github/own-projects/cCalendar/build/CMakeFiles/install/local.dir
-/home/anthony/Github/own-projects/cCalendar/build/CMakeFiles/install/strip.dir
