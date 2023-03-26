@@ -5,6 +5,10 @@
 
 #define TERMINATOR 1
 
+#define WHITE_LETTER "\e[38;2;0;0;0m"
+#define BLACK_FOREGROUND "\e[48;2;255;255;255m"
+#define NULL_COLOR "\e[0m"
+
 unsigned short getDaysInMonth(unsigned month_n){
 	unsigned short days[] = {31, 28, 31, 30, 31, 30,
 				   31, 31, 30, 31, 30, 31};
@@ -32,10 +36,12 @@ void printCurrentCalendar(){
 
 	// Print calendar in table format
 	printf("--------%04d %02d %02d--------", year, day, month);
-	for (unsigned short day = 1; day <= monthDays; ++day){
+	for (unsigned short d = 1; d <= monthDays; ++d){
 		// Break line in each week 
-		if (day % 7 == 1) puts("");
-		printf("%02i  ", day);
+		if (d % 7 == 1) puts("");
+		// Colorize current day 
+		if (d == day) printf("%s%s%02i%s  ", WHITE_LETTER, BLACK_FOREGROUND, d, NULL_COLOR);
+		else printf("%02i  ", d);
 	}
 	puts("");
 
@@ -61,9 +67,6 @@ void printSpecificCalendar(unsigned short year, unsigned short monthNum){
 	char month[4];
 	strcpy(month, months[monthNum - TERMINATOR]);
 
-	/* For some reason year and month
-	 * are not being returned correctly
-	 * so these magic numbers are needed*/
 	unsigned short monthDays = getDaysInMonth(monthNum - TERMINATOR);
 
 	// Print calendar in table format
@@ -124,11 +127,3 @@ int main(int argc, char *argv[]){
 	else puts("INVALID INPUT: You should pass both parameters!");
 	return 0;
 }
-
-
-
-
-
-
-
-
