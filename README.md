@@ -1,23 +1,23 @@
-# cCalendar
-A command line based calendar application written in C.
+# Rscal
+A command line-based calendar application written in Rust.
 
 ## Features
-- Display calendar for a specified month and year
-- Calculate days until specified day in a month
+- Displays a generic calendar based in your time
+- Display a specific calendar for a given month and year
 
 ## Usage
-To compile the program, run the following command into the build folder:
-> cmake .. & make
+To compile the program and install it in you computer, run the following command into the build folder:
+> cargo build
 
 Print out the current month calendar:
-> ./cCalendar
+> rscal
 
 To specify a year/month:
-> ./cCalendar -y [YEAR] -m [MONTH]
+> rscal -y [YEAR] -m [MONTH] 
 
 ## Requirements
-- GCC Compiler
-- Cmake
+- Rust programming language (stable)
+- Cargo package manager
 
 ## Contributions
 Feel free to submit pull requests and bug reports
